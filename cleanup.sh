@@ -7,3 +7,9 @@ sudo find . -name '*.zip' -delete
 sudo find . -name '*.gz' -delete
 sudo find . -name '*.bz2' -delete
 sudo find . -name '*.xz' -delete
+
+for i in *; do
+	pushd $i &>/dev/null || continue
+	test -d $i && sudo rm -rf $i
+	popd &>/dev/null
+done
