@@ -7,6 +7,8 @@ sudo find . -name '*.zip' -delete
 sudo find . -name '*.gz' -delete
 sudo find . -name '*.bz2' -delete
 sudo find . -name '*.xz' -delete
+sudo find . -name '*.pkg' -delete
+sudo find . -name '*.sign' -delete
 
 for i in *; do
 	pushd ${i} &>/dev/null || continue
