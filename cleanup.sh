@@ -4,6 +4,7 @@ sudo find . -maxdepth 2 -type d -name src -exec rm -rf "{}" \;
 sudo find . -maxdepth 2 -type d -name pkg -exec rm -rf "{}" \;
 
 sudo find . -maxdepth 2 -type f -name '*.sign' -delete
+sudo find . -maxdepth 2 -type f -name '*.sig' -delete
 sudo find . -maxdepth 2 -type f -name '*.pkg' -delete
 
 sudo find . -maxdepth 2 -type f -name '*.zip' -delete
