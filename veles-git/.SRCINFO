@@ -1,0 +1,27 @@
+pkgbase = veles-git
+	pkgdesc = Binary data analysis and visualization tool
+	pkgver = 2017.06.0.1.r146.g41a1bde
+	pkgrel = 2
+	url = https://codisec.com/veles
+	arch = x86_64
+	license = APLv2
+	source = git+https://github.com/codilime/veles.git
+	sha256sums = SKIP
+
+pkgname = veles-git
+	depends = qt5-base
+	depends = python
+	depends = python-veles-git
+	depends = protobuf
+	depends = zlib
+	provides = veles
+	conflicts = veles-bin
+	conflicts = veles
+
+pkgname = python-veles-git
+	depends = python
+	depends = python-pbr
+	depends = python-six
+	depends = python-msgpack
+	conflicts = python-veles
+
