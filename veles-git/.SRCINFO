@@ -1,6 +1,6 @@
 pkgbase = veles-git
 	pkgdesc = Binary data analysis and visualization tool
-	pkgver = 2017.06.0.1.r173.gff6fa83
+	pkgver = 2017.06.0.1.r185.g4ec2c12
 	pkgrel = 1
 	url = https://codisec.com/veles
 	arch = x86_64
@@ -14,6 +14,7 @@ pkgname = veles-git
 	depends = python-veles-git
 	depends = protobuf
 	depends = zlib
+	depends = python-pyopenssl
 	provides = veles
 	conflicts = veles-bin
 	conflicts = veles
