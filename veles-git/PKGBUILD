@@ -1,7 +1,7 @@
 # Maintainer: Tony Lambiris <tony@critialstack.com>
 
 pkgname=(veles-git python-veles-git)
-pkgver=2017.06.0.1.r173.gff6fa83
+pkgver=2017.06.0.1.r185.g4ec2c12
 pkgrel=1
 pkgdesc='Binary data analysis and visualization tool'
 url='https://codisec.com/veles'
@@ -27,7 +27,7 @@ build() {
 }
 
 package_veles-git() {
-  depends=('qt5-base' 'python' 'python-veles-git' 'protobuf' 'zlib')
+  depends=('qt5-base' 'python' 'python-veles-git' 'protobuf' 'zlib' 'python-pyopenssl')
   conflicts=('veles-bin' 'veles')
   provides=('veles')
 
