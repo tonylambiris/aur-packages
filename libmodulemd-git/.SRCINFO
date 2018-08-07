@@ -1,0 +1,19 @@
+pkgbase = libmodulemd-git
+	pkgdesc = C Library for manipulating module metadata files
+	pkgver = 1.6.1.r5.gefda265
+	pkgrel = 1
+	url = https://github.com/fedora-modularity/libmodulemd
+	arch = any
+	license = MIT
+	makedepends = meson
+	makedepends = ninja
+	makedepends = pkgconfig
+	makedepends = python-gobject
+	makedepends = valgrind
+	provides = libmodulemd
+	conflicts = libmodulemd
+	source = libmodulemd::git+https://github.com/fedora-modularity/libmodulemd.git
+	sha256sums = SKIP
+
+pkgname = libmodulemd-git
+
